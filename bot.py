@@ -195,14 +195,21 @@ async def proc_ban(message):
 
 @dp.message_handler(content_types='text')
 async def echo_all(message):
-    if random.randint(1, 100) == 100:
+    random_value = random.randint(1, 500)
+
+    if random_value == 500:
         await message.reply("ну ты лол вообще))))))))) за словами бы лучше следил")
+    elif random_value == 499:
+        await message.reply("базар братанчик дело говоришь")
 
 
 @dp.message_handler(content_types='photo')
 async def echo_photos(message):
-    if random.randint(1, 50) == 50:
+    random_value = random.randint(1, 100)
+    if random_value == 100:
         await message.reply("да уж фоточки у тебя не оч)0)((9")
+    elif random_value == 99:
+        await message.reply("ляя кефтеме какие бархатные фотки ай")
 
 
 async def main():
